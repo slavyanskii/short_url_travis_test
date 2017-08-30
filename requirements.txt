@@ -1,0 +1,12 @@
+aiohttp==2.2.3
+async-timeout==1.3.0
+asyncpg==0.12.0
+chardet==3.0.4
+marshmallow==2.13.5
+multidict==3.1.3
+py==1.4.34
+pytest==3.0.3
+python-dateutil==2.5.3
+PyYAML==3.12
+short-url==1.2.2
+yarl==0.12.0
