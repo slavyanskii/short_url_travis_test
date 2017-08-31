@@ -3,5 +3,3 @@
 To start the project complete docker-compose file with database info,
 edit config template and use `docker-compose up -d`
 
-use `update_db.sh` for run migrations
-
