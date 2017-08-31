@@ -52,9 +52,9 @@ class UrlView(BaseView):
         try:
             url_id = short_url_maker.decode_url(self.request.match_info['url'])
         except ValueError:
-            return web.HTTPBadRequest(text='This short URL not acceptable')
+            return web.FileResponse('static/not_found.html')
         full_url = await self.request['db'].get_full_url(url_id)
         if full_url:
             return web.HTTPFound(full_url)
         else:
-            return web.HTTPNotFound(text='URL not found')
+            return web.FileResponse('static/not_found.html')

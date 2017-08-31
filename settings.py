@@ -5,5 +5,5 @@ with open("config.yml", 'r') as stream:
 
 DB_CONFIG = config.get('database')
 
-SCHEME = 'http'
-DOMAIN = '0.0.0.0:80'
+SCHEME = ''
+DOMAIN = ''
