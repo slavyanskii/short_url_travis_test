@@ -11,6 +11,7 @@ async def db_middleware(app, handler):
     async def middleware(request):
         request['db'] = app['db']
         return await handler(request)
+
     return middleware
 
 
@@ -22,6 +23,7 @@ def start_app(port):
     loop.run_until_complete(asyncio.ensure_future(run_migrations()))
     setup_routes(app)
     web.run_app(app, port=port)
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()

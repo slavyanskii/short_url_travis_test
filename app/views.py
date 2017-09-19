@@ -48,6 +48,9 @@ class UrlView(BaseView):
         result['short_url'] = urlunsplit((SCHEME, DOMAIN, short_url, None, None))
         return web.json_response(result)
 
+
+class UrlRedirectView(BaseView):
+
     async def get(self):
         try:
             url_id = short_url_maker.decode_url(self.request.match_info['url'])

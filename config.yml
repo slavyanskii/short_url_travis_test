@@ -1,6 +1,6 @@
 database:
-  host:
-  port:
-  user:
-  database:
-  password:
+  host: 'app.postgres'
+  port: '5432'
+  user: 'postgres'
+  database: 'short_url_db'
+  password: 'n34SeC'
