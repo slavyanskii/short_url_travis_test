@@ -3,4 +3,4 @@ database:
   port: '5432'
   user: 'postgres'
   database: 'short_url_db'
-  password: 'n34SeC'
+  password: 'n34SeCrFv0f'

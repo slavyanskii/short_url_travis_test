@@ -27,7 +27,7 @@ services:
 
     environment:
       LC_ALL: C.UTF-8
-      POSTGRES_PASSWORD: n34SeC
+      POSTGRES_PASSWORD: n34SeCrFv0f
       POSTGRES_DB: short_url_db
 
     networks:
