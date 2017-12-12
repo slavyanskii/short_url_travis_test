@@ -15,7 +15,6 @@ async def db_middleware(app, handler):
     return middleware
 
 
-
 async def error_middleware(app, handler):
     async def middleware_error_handler(request):
         try:
